@@ -57,8 +57,8 @@ The Bash commands that will appear in this tutorial are:
 
 ### Create a repository
 
-1. Go to https://github.com/ and log in.
-2. Go to your profile ("click on the top right icon"->"Your profile")
+**1.** Go to https://github.com/ and log in.
+**2.** Go to your profile ("click on the top right icon"->"Your profile")
 3. Click on "Repositories"
 4. CLick on "New"
 
@@ -83,6 +83,10 @@ The Bash commands that will appear in this tutorial are:
 git clone https://github.com/guillemylla/GitHub_Training.git
 ```
 ![](images/NewRepo5.png)
+
+At this point, you have creted a repository with a README file in GitHub and downloaded it to your computer.
+
+### Add, edit, and remove files
 
 
 
