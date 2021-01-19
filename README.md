@@ -44,11 +44,11 @@ The Bash commands that will appear in this tutorial are:
 
 ### Create a GitHub account
 
-1- Create an account: https://github.com/join
+1. Create an account: https://github.com/join
 
-2- Follow the steps
+2. Follow the steps
 
-3- Get a "GitHub  Education" account (optional): 
+3. Get a "GitHub  Education" account (optional): 
 	- *"If you're an educator or a researcher, you can apply to receive GitHub Team for your organization account for free."* 
 	- To "upgrade"  to Educator account follow this instructions : https://docs.github.com/en/education/teach-and-learn-with-github-education/apply-for-an-educator-or-researcher-discount
 
@@ -57,13 +57,33 @@ The Bash commands that will appear in this tutorial are:
 
 ### Create a repository
 
-1- Go to https://github.com/ and log in.
-2- Go to your profile ("click on the top right icon"->"Your profile")
-3- Click on "Repositories"
-4- CLick on "New"
-
+1. Go to https://github.com/ and log in.
+2. Go to your profile ("click on the top right icon"->"Your profile")
+3. Click on "Repositories"
+4. CLick on "New"
 
 ![](images/NewRepo1.png)
+
+5. Choose a **name* for your repository, add a *Description* (optional) , define if it should be **public** or **private** , add a **README** file (optional), add **license** (optional).
+6. "Create repository"
+
+![](images/NewRepo2.png)
+
+7. You will see the repository in your profile. If you chose to add a README, you will see it with its content (by defaul it will contain what you put as "Description").
+
+![](images/NewRepo3.png)
+
+8. Click on "Code" and copy the URL of your repostory.
+
+![](images/NewRepo4.png)
+
+9. Go to your computer (or the cluster, or any machine you want), open the terminal, nevigate to the directory of your choice, and **clone** the repository with the command:
+
+```
+git clone https://github.com/guillemylla/GitHub_Training.git
+```
+![](images/NewRepo5.png)
+
 
 
 ## Branch
