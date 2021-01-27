@@ -52,19 +52,35 @@ The Bash commands that will appear in this tutorial are:
 	- *"If you're an educator or a researcher, you can apply to receive GitHub Team for your organization account for free."* 
 	- To "upgrade"  to Educator account follow this instructions : https://docs.github.com/en/education/teach-and-learn-with-github-education/apply-for-an-educator-or-researcher-discount
 
+### First time using git
+
+ - The first time you use git in a computer, you need to configure it
+ 
+ ```
+ $ git config --global user.name "your_username"
+ $ git config --global user.email youremail@example.com
+ ```
+
+- Optional: if you want git to remember the password during a period of time.
+
+
+```
+git config credential.helper 'cache --timeout=<seconds>'
+```
+
 
 ## Repository
 
 ### Create a repository
 
-**1.** Go to https://github.com/ and log in.
-**2.** Go to your profile ("click on the top right icon"->"Your profile")
+1. Go to https://github.com/ and log in.
+2. Go to your profile ("click on the top right icon"->"Your profile")
 3. Click on "Repositories"
 4. CLick on "New"
 
 ![](images/NewRepo1.png)
 
-5. Choose a **name* for your repository, add a *Description* (optional) , define if it should be **public** or **private** , add a **README** file (optional), add **license** (optional).
+5. Choose a **name** for your repository, add a **Description** (optional) , define if it should be **public** or **private** , add a **README** file (optional), add **license** (optional).
 6. "Create repository"
 
 ![](images/NewRepo2.png)
@@ -89,6 +105,7 @@ At this point, you have creted a repository with a README file in GitHub and dow
 ### Add, edit, and remove files
 
 
+### Track changes
 
 ## Branch
 
@@ -103,6 +120,8 @@ At this point, you have creted a repository with a README file in GitHub and dow
 - git fetch
 - git merge
 - git pull
+- git show
+- git status
 
 
 Other useful commands
@@ -136,7 +155,7 @@ My first commit
 
 
 ## Resources
-
+- http://book.git-scm.com/book/en/v2
 - https://help.rc.ufl.edu/doc/Git
 - https://github.com/magitz/github-slideshow 
 - https://ufresearchcomputing.github.io/git-training/
