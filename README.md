@@ -1,19 +1,13 @@
 # GitHub Training
 
 GitHub training for the Extavour lab
-
 ------------
 
-## Basic bash commands
+## Table of contents
 
-Bash is a command language for Unix shell (which means that are the same for MacOs and Linux, and different from Windows which uses DOS). 
-
-The Bash commands that will appear in this tutorial are:
-
-- ```cd```: change directory 
-- ```mv```: move
-- ```cp```: copy
-- ```nano```: Commandline text editor (there are others such as vim, emacs)
+1. [Introduction](## Introduction)
+2.[Hands-on][## Hands-on]
+9. [Basic bash commands](## Basic bash commands)
 
 
 
@@ -21,15 +15,15 @@ The Bash commands that will appear in this tutorial are:
 
 ## Introduction
 
-### What is git?
+## What is git?
 
 Git is a version-control tool that tracks changes made to the files and directories in a project.
 
-### When do I want to use git?
+## When do I want to use git?
 
 The day that you write more than 1 line of code.  (That's my opinion)
 
-### Why do I want to use git?
+## Why do I want to use git?
 
 - To reproduce your analysis.
 - To go back to previous versions of your scripts.
@@ -38,12 +32,12 @@ The day that you write more than 1 line of code.  (That's my opinion)
 
 
 
-### What is GitHub?
+## What is GitHub?
 
 A cloud-base platform to host code and version control using git. There are many other similar platforms (GitLab, Bitbucket), with similar features. Since GitHub is one of the most popular platforms and offers a basic free tier for personal use and an advanced free tier for academia in this tutorial I will use GitHub.
 
 
-### How does Git work?
+## How does Git work?
 
 Git creates snapshots of all your files and directories every time you "commit". Git takes a picture of what all your files look like at that moment and stores a reference to that snapshot. For efficiency, the files that are not changed are not stored again, Git just creates a link to the previous identical stored file.
 
@@ -51,9 +45,7 @@ This system allows the user to go back to any previous version of the project. I
 
 -------
 
-## Hands-on
-
-### Create a GitHub account
+## Create a GitHub account
 
 1. Create an account: https://github.com/join
 
@@ -63,7 +55,7 @@ This system allows the user to go back to any previous version of the project. I
 	- *"If you're an educator or a researcher, you can apply to receive GitHub Team for your organization account for free."* 
 	- To "upgrade"  to Educator account follow this instructions : https://docs.github.com/en/education/teach-and-learn-with-github-education/apply-for-an-educator-or-researcher-discount
 
-### First time using git
+## First time using git
 
  - The first time you use git in a computer, you need to configure it
  
@@ -81,7 +73,7 @@ git config credential.helper 'cache --timeout=<seconds>'
 
 
 
-### Create a repository from GitHub
+## Create a repository from GitHub
 
 1. Go to https://github.com/ and log in.
 2. Go to your profile ("click on the top right icon"->"Your profile")
@@ -113,15 +105,11 @@ git clone https://github.com/guillemylla/GitHub_Training.git
 At this point, you have created a repository with a README file in GitHub and downloaded it to your computer.
 
 
-### Add a new file
+## Add a new file
 
 After cloning the new repository now you can start your project.
 
 1. Create a python scripts with your favorite text editor (NOT word processor.  Text editors are; NotePad, TextEdit, Gedit, nano, Sublime, Atom, etc. ).
-    * In my example the python scrip is called "Hello_World.py" and contains:
-```
-print("Hello world!")
-```
 2. Start tracking the file with git.
 ```
 git add Hello_World.py
@@ -135,13 +123,13 @@ git commit -m "my first commit"
 ```
 git push origin main
 ```
-5. Go to GitHub and you should see the file in your repository.
+5. Go to GitHub and you should see the [Hello_World.py](Hello_World.py) file in the repository.
 
 
 
-### Edit files
+## Edit files
 
-### Commit changes
+## Commit changes
 
 
 ## Branch
@@ -183,6 +171,18 @@ My first commit
      # main used to be called "master". Github recently removed unnecessary references to slavery
 ``` 
 
+------------
+
+## Basic bash commands
+
+Bash is a command language for Unix shell (which means that are the same for MacOs and Linux, and different from Windows which uses DOS). 
+
+The Bash commands that will appear in this tutorial are:
+
+- ```cd```: change directory 
+- ```mv```: move
+- ```cp```: copy
+- ```nano```: Command line text editor (there are others such as vim, emacs)
 
 
 ## Other things
