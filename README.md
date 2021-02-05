@@ -143,17 +143,42 @@ git push origin main
 ## Edit files
 
 1. Let's edit the file Hello_world.py
-2. Stage the file.
+3. See differences with last committed version.
+```
+git diff
+```
+2. Stage all modified files.
     * Git has a staging area in which it stores files with changes you want to save that haven't been saved yet. Putting files in the staging area is like putting things in a box, while committing those changes is like putting that box in the mail: you can add more things to the box or take things out as often as you want, but once you put it in the mail, you can't make further changes.
 ```
 git add -u
 ```
 3. If you check the status ``git status`` it will show you that the file has "changes to be committed". The snapshot has not yet been created.
+
     
+---------
 
 ## Commit changes
 
+1- Now, create a "snapshot" of the current files
 
+```
+git commit -m "add Spanish"
+```
+    * If you accidentally mistype a commit message, you can change it using the --amend flag.
+```
+git commit -m "add spinach"
+git commit --amend -m "add Spanish"
+```
+
+
+2- Save changes on GitHub
+
+```
+git push
+```
+3- You can see the changes and compare versions in GitHub
+
+![](images/GIthub_diff.png)
 
 
 ## Make a Branch
