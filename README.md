@@ -16,6 +16,9 @@ GitHub training for the Extavour lab
 9. [Basic bash commands](##Basic-bash-commands)
 
 
+----------
+
+![](images/in_case_of_fire.png)
 
 ----------
 
@@ -164,7 +167,7 @@ git add -u
 git commit -m "add Spanish"
 ```
 
- * If you accidentally mistype a commit message, you can change it using the --amend flag.
+ * If you accidentally mistype a commit message, you can change it using the ```--amend``` flag.
 
 
 ```
