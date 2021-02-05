@@ -21,15 +21,15 @@ GitHub training for the Extavour lab
 
 ## Introduction
 
-## What is git?
+### What is git?
 
 Git is a version-control tool that tracks changes made to the files and directories in a project.
 
-## When do I want to use git?
+### When do I want to use git?
 
 The day that you write more than 1 line of code.  (That's my opinion)
 
-## Why do I want to use git?
+### Why do I want to use git?
 
 - To reproduce your analysis.
 - To go back to previous versions of your scripts.
@@ -38,16 +38,18 @@ The day that you write more than 1 line of code.  (That's my opinion)
 
 
 
-## What is GitHub?
+### What is GitHub?
 
 A cloud-base platform to host code and version control using git. There are many other similar platforms (GitLab, Bitbucket), with similar features. Since GitHub is one of the most popular platforms and offers a basic free tier for personal use and an advanced free tier for academia in this tutorial I will use GitHub.
 
 
-## How does Git work?
+### How does Git work?
 
 Git creates snapshots of all your files and directories every time you "commit". Git takes a picture of what all your files look like at that moment and stores a reference to that snapshot. For efficiency, the files that are not changed are not stored again, Git just creates a link to the previous identical stored file.
 
 This system allows the user to go back to any previous version of the project. It also allows to create project branches that are useful for exploring new ideas, or for allowing multiple people to work on the same project at once. Branches then can be merged to the main one if the user decides to keep the changes made on the branch. 
+
+
 
 -------
 
@@ -77,7 +79,7 @@ This system allows the user to go back to any previous version of the project. I
 git config credential.helper 'cache --timeout=<seconds>'
 ```
 
-
+----------
 
 ## Create a repository from GitHub
 
@@ -110,6 +112,7 @@ git clone https://github.com/guillemylla/GitHub_Training.git
 
 At this point, you have created a repository with a README file in GitHub and downloaded it to your computer.
 
+------------
 
 ## Add files to the repository
 
@@ -119,6 +122,10 @@ After cloning the new repository now you can start your project.
 2. Start tracking the file with git.
 ```
 git add Hello_World.py
+```
+    * If you want to track **all files in the directory* at once you can do:
+```
+git add .
 ```
 3. Commit (create a snapshot of the file)
     * Add a message indicating that is the first commit
@@ -131,11 +138,22 @@ git push origin main
 ```
 5. Go to GitHub and you should see the [Hello_World.py](Hello_World.py) file in the repository.
 
-
+-----------
 
 ## Edit files
 
+1. Let's edit the file Hello_world.py
+2. Stage the file.
+    * Git has a staging area in which it stores files with changes you want to save that haven't been saved yet. Putting files in the staging area is like putting things in a box, while committing those changes is like putting that box in the mail: you can add more things to the box or take things out as often as you want, but once you put it in the mail, you can't make further changes.
+```
+git add -u
+```
+3. If you check the status ``git status`` it will show you that the file has "changes to be committed". The snapshot has not yet been created.
+    
+
 ## Commit changes
+
+
 
 
 ## Make a Branch
@@ -199,8 +217,6 @@ The Bash commands that will appear in this tutorial are:
 
 ## Resources
 - http://book.git-scm.com/book/en/v2
-- https://help.rc.ufl.edu/doc/Git
-- https://github.com/magitz/github-slideshow 
 - https://ufresearchcomputing.github.io/git-training/
 - https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 - https://education.github.com/git-cheat-sheet-education.pdf
