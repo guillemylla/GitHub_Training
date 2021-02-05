@@ -160,11 +160,13 @@ git add -u
 ## Commit changes
 
 1- Now, create a "snapshot" of the current files
-
 ```
 git commit -m "add Spanish"
 ```
-    * If you accidentally mistype a commit message, you can change it using the --amend flag.
+
+ * If you accidentally mistype a commit message, you can change it using the --amend flag.
+
+
 ```
 git commit -m "add spinach"
 git commit --amend -m "add Spanish"
