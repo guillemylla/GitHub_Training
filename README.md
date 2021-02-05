@@ -6,7 +6,13 @@ GitHub training for the Extavour lab
 ## Table of contents
 
 1. [Introduction](##Introduction)
-2. [Hands-on][##Hands-on]
+2. [Create a GitHub account](##Create-a-GitHub-account)
+3. [First time using git](##First-time-using-git)
+4. [Create a repository from GitHub](##Create-a-repository-from-GitHub)
+5. [Add files to the repository](##Add-files-to-the-repository)
+6. [Edit files](##Edit-files)
+7. [Commit changes](##Commit-changes)
+8. [Make a Branch](##Make-a-Branch)
 9. [Basic bash commands](##Basic-bash-commands)
 
 
@@ -105,7 +111,7 @@ git clone https://github.com/guillemylla/GitHub_Training.git
 At this point, you have created a repository with a README file in GitHub and downloaded it to your computer.
 
 
-## Add a new file
+## Add files to the repository
 
 After cloning the new repository now you can start your project.
 
@@ -132,7 +138,7 @@ git push origin main
 ## Commit changes
 
 
-## Branch
+## Make a Branch
 
 ## Track file
 
