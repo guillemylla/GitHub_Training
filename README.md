@@ -5,9 +5,9 @@ GitHub training for the Extavour lab
 
 ## Table of contents
 
-1. [Introduction](## Introduction)
-2.[Hands-on][## Hands-on]
-9. [Basic bash commands](## Basic bash commands)
+1. [Introduction](##Introduction)
+2. [Hands-on][##Hands-on]
+9. [Basic bash commands](##Basic-bash-commands)
 
 
 
