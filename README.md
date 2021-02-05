@@ -19,24 +19,35 @@ The Bash commands that will appear in this tutorial are:
 
 ----------
 
+## Introduction
 
-## What is git?
+### What is git?
+
+Git is a version-control tool that tracks changes made to the files and directories in a project.
+
+### When do I want to use git?
+
+The day that you write more than 1 line of code.  (That's my opinion)
+
+### Why do I want to use git?
+
+- To reproduce your analysis.
+- To go back to previous versions of your scripts.
+- To share your code.
+- To collaborate.
 
 
-## Why do I want to use git?
+
+### What is GitHub?
+
+A cloud-base platform to host code and version control using git. There are many other similar platforms (GitLab, Bitbucket), with similar features. Since GitHub is one of the most popular platforms and offers a basic free tier for personal use and an advanced free tier for academia in this tutorial I will use GitHub.
 
 
-## What is GitHub?
+### How does Git work?
 
+Git creates snapshots of all your files and directories every time you "commit". Git takes a picture of what all your files look like at that moment and stores a reference to that snapshot. For efficiency, the files that are not changed are not stored again, Git just creates a link to the previous identical stored file.
 
-## Why do I want to use github?
-- Backup
-- Track versions
-- Collaborate
-- Download other people’s scripts
-
-
-## How it works?
+This system allows the user to go back to any previous version of the project. It also allows to create project branches that are useful for exploring new ideas, or for allowing multiple people to work on the same project at once. Branches then can be merged to the main one if the user decides to keep the changes made on the branch. 
 
 -------
 
@@ -69,9 +80,8 @@ git config credential.helper 'cache --timeout=<seconds>'
 ```
 
 
-## Repository
 
-### Create a repository
+### Create a repository from GitHub
 
 1. Go to https://github.com/ and log in.
 2. Go to your profile ("click on the top right icon"->"Your profile")
@@ -85,27 +95,54 @@ git config credential.helper 'cache --timeout=<seconds>'
 
 ![](images/NewRepo2.png)
 
-7. You will see the repository in your profile. If you chose to add a README, you will see it with its content (by defaul it will contain what you put as "Description").
+7. You will see the repository in your profile. If you chose to add a README, you will see it with its content (by default it will contain what you put as "Description").
 
 ![](images/NewRepo3.png)
 
-8. Click on "Code" and copy the URL of your repostory.
+8. Click on "Code" and copy the URL of your repository.
 
 ![](images/NewRepo4.png)
 
-9. Go to your computer (or the cluster, or any machine you want), open the terminal, nevigate to the directory of your choice, and **clone** the repository with the command:
+9. Go to your computer (or the cluster, or any machine you want), open the terminal, navigate to the directory of your choice, and **clone** the repository with the command:
 
 ```
 git clone https://github.com/guillemylla/GitHub_Training.git
 ```
 ![](images/NewRepo5.png)
 
-At this point, you have creted a repository with a README file in GitHub and downloaded it to your computer.
-
-### Add, edit, and remove files
+At this point, you have created a repository with a README file in GitHub and downloaded it to your computer.
 
 
-### Track changes
+### Add a new file
+
+After cloning the new repository now you can start your project.
+
+1. Create a python scripts with your favorite text editor (NOT word processor.  Text editors are; NotePad, TextEdit, Gedit, nano, Sublime, Atom, etc. ).
+1.1. In my example the python scrip is called "Hello_World.py" and contains:
+```
+print("Hello world!")
+```
+2. Start tracking the file with git.
+```
+git add Hello_World.py
+```
+3. Commit (create a snapshot of the file)
+3.1. Add a message indicating that is the first commit
+```
+git commit -m "my first commit"
+```
+4. Save the changes in the cloud (GitHub)
+```
+git push origin main
+```
+5. Go to GitHub and you should see the file in your repository.
+
+
+
+### Edit files
+
+### Commit changes
+
 
 ## Branch
 
