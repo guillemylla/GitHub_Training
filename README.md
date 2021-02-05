@@ -118,7 +118,7 @@ At this point, you have created a repository with a README file in GitHub and do
 After cloning the new repository now you can start your project.
 
 1. Create a python scripts with your favorite text editor (NOT word processor.  Text editors are; NotePad, TextEdit, Gedit, nano, Sublime, Atom, etc. ).
-    1.1. In my example the python scrip is called "Hello_World.py" and contains:
+    * In my example the python scrip is called "Hello_World.py" and contains:
 ```
 print("Hello world!")
 ```
@@ -127,7 +127,7 @@ print("Hello world!")
 git add Hello_World.py
 ```
 3. Commit (create a snapshot of the file)
-    3.1. Add a message indicating that is the first commit
+    * Add a message indicating that is the first commit
 ```
 git commit -m "my first commit"
 ```
