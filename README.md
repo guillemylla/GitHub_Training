@@ -243,6 +243,18 @@ git log
 ```
 git checkout <commit ID>
 ```
+3-Edit the file and:
+```
+git add -u  Hello_world.py
+git commit -m "change the past"
+```
+4-  NO, we can't change the past (git commit gives error). But we can make a branch and commit
+```
+git branch back_to_the_future
+git checkout  back_to_the_future
+git push origin back_to_the_future
+```
+
 
 --------------
 
