@@ -238,7 +238,11 @@ git checkout main
 ```
 git log
 ```
-2- Find the commit id we want to restore
+2- Find the commit id we want to restore.
+
+```
+git checkout <commit ID>
+```
 
 --------------
 
