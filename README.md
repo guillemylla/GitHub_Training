@@ -16,9 +16,6 @@ GitHub training for the Extavour lab
 9. [Basic bash commands](##Basic-bash-commands)
 
 
-----------
-
-![](images/in_case_of_fire.png)
 
 ----------
 
@@ -139,9 +136,10 @@ git commit -m "my first commit"
 ```
 git push origin main
 ```
+    * origin is the default name Git gives to the server you cloned from:
+
 5. Go to GitHub and you should see the [Hello_World.py](Hello_World.py) file in the repository.
 
------------
 
 ## Edit files
 
@@ -186,9 +184,51 @@ git push
 ![](images/GIthub_diff.png)
 
 
-## Make a Branch
+-----------
 
-## Track file
+## Branching
+
+Allows you to diverge from the main branch. The main branch reminds unhatched while you experiment in the branch.  If you are happy with the new branch, you can later make it the main one.
+
+1- Create  new branch
+
+```
+git branch new_branch
+```
+
+2- Change working branch to the "new_branch"
+
+```
+git checkout new_branch
+```
+
+3- Edit a file (i.e. Hello_World.py))
+4- Stage and commit the changes to the new branch
+
+```
+git add -u Hello_world.py
+git commit -m "first commit to new branch"
+git push origin new_branch
+```
+
+5- Compare the 2 branches
+
+```
+git diff main..new_branch
+```
+
+
+
+
+-----------
+
+## Pull changes
+
+- **git fetch** retrieves the latest meta-data info from the original ( doesn’t do any file transferring. It’s more like just checking to see if there are any changes available). 
+
+- **git pull** on the other hand does that AND bringsthose changes from the remote repository.
+
+- Pulls down all the data from that remote project that you don’t have yet. After you do this, you should have references to all the branches from thatremote, which you can merge in or inspect at any time.
 
 ## Basic Git commands
 
@@ -253,5 +293,8 @@ The Bash commands that will appear in this tutorial are:
 
 
 
+----------
+
+![](images/in_case_of_fire.png)
 
 
