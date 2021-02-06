@@ -7,4 +7,4 @@ def sayHI(name):
 
 
 sayHI("Bob")
-sayHi("Alice")
+sayHI("Alice")
