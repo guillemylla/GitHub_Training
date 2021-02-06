@@ -227,9 +227,66 @@ git checkout main
 
 ```
  git merge new_branch
+ git push
  ```
- * Now main contains the changes made on the new branch
+ * Now main branch contains the changes made on the new branch
 
+--------------
+
+## Merging conflicts
+ Typically happens When same lines have been changed independently and Git cannot automatically determine what is correct.
+
+1- Create 2 branches
+
+```
+git branch branch_1
+git branch branch_2
+```
+2 - Go to branch_1 and edit 1st line
+```
+git checkout branch_1
+ga -u Hello_world.py
+gc -m "Hello Alice"
+```
+2 - Go to branch_2 and edit 1st line
+```
+git checkout branch_2
+ga -u Hello_world.py
+gc -m "Hello Bob"
+```
+3- Now go back to branch_1 and try to merge it with branch_2
+ ```
+ git checkout  branch_1
+ git merge branch_2
+ ```
+ *We get a merging conflict error
+ ```
+Auto-merging Hello_world.py
+CONFLICT (content): Merge conflict in Hello_world.py
+Automatic merge failed; fix conflicts and then commit the result.
+```
+4- See details
+```
+git log --merge
+```
+5- Git didn't know which version is correct, so put both of them in the "Hello_world.py" using these symbols
+
+```
+<<<<<<< HEAD
+Content of latest edited branch
+=======
+Content of the other branch
+>>>>>>> branch_1
+```
+
+6- Delete the "unwanted"" lines and commit
+
+```
+git add -u Hello_world.py
+git commit -m "Fix merge"
+git push origin git push 
+
+```
 
 -----------
 
