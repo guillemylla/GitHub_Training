@@ -217,7 +217,18 @@ git push origin new_branch
 git diff main..new_branch
 ```
 
+6- Go back to main branch
 
+```
+git checkout main
+```
+
+7- Merge the branch to main
+
+```
+ git merge new_branch
+ ```
+ * Now main contains the changes made on the new branch
 
 
 -----------
