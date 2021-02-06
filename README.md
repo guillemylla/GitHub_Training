@@ -255,6 +255,11 @@ git checkout  back_to_the_future
 git push origin back_to_the_future
 ```
 
+5- IF I only want to restore a single (Hello_world.py ):
+
+```
+git checkout <commit ID> Hello_world.py 
+```
 
 --------------
 
