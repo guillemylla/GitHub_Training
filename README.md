@@ -231,9 +231,19 @@ git checkout main
  ```
  * Now main branch contains the changes made on the new branch
 
+---------------
+## Resoting previois versions
+
+1- See all the commits:
+```
+git log
+```
+2- Find the commit id we want to restore
+
 --------------
 
 ## Merging conflicts
+
  Typically happens When same lines have been changed independently and Git cannot automatically determine what is correct.
 
 1- Create 2 branches
@@ -241,22 +251,26 @@ git checkout main
 ```
 git branch branch_1
 git branch branch_2
+git branch # to see allbranches
 ```
 2 - Go to branch_1 and edit 1st line
 ```
 git checkout branch_1
-ga -u Hello_world.py
-gc -m "Hello Alice"
+git ad -u Hello_world.py
+git commit -m "SayHi function"
+git push origin branch_1
 ```
 2 - Go to branch_2 and edit 1st line
 ```
 git checkout branch_2
-ga -u Hello_world.py
-gc -m "Hello Bob"
+git add -u Hello_world.py
+git commit -m "Hello Bob"
+git push origin branch_2
 ```
 3- Now go back to branch_1 and try to merge it with branch_2
  ```
  git checkout  branch_1
+ git diff branch_1..branch_2
  git merge branch_2
  ```
  *We get a merging conflict error
@@ -288,9 +302,27 @@ git push origin git push
 
 ```
 
+7- Notice that the main branch still hasn't changed, lets update it with content from branch_1
+
+```
+git checkout main
+```
+
+
 -----------
 
 ## Pull changes
+
+I'm going to work on the same project in 2 different computers (i.e. my desktop and cluster). If I make changes in the files in one device, I want to make sure tp get this change sin theother device before editing the same files. 
+
+1- I clone the project in a new device (in this example I clone it in another directory).
+```
+git clone https://github.com/guillemylla/GitHub_Training.git
+```
+* This Dowloads all the files
+
+
+
 
 - **git fetch** retrieves the latest meta-data info from the original ( doesn’t do any file transferring. It’s more like just checking to see if there are any changes available). 
 
