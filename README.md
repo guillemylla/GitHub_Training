@@ -17,7 +17,10 @@
 - [Add files to the repository](#Add-files-to-the-repository)
 - [Edit files](#Edit-files)
 - [Commit changes](#Commit-changes)
-- [Make a Branch](#Make-a-Branch)
+- [Branching and merging](#Branching-and-merging)
+- [Restoring](#Restoring)
+- [Merging conflicts](#Merging-conflicts)
+- [Pulling changes](#Pulling-changes)
 - [Basic bash commands](#Basic-bash-commands)
 
 
@@ -130,9 +133,7 @@ After cloning the new repository now you can start your project.
 ```
 git add Hello_World.py
 ```
-
-    * If you want to track **all files in the directory* at once you can do:
-    
+ - If you want to track **all files in the directory* at once you can do:
 ```
 git add .
 ```
@@ -145,9 +146,7 @@ git commit -m "my first commit"
 ```
 git push origin main
 ```
-
-    * origin is the default name Git gives to the server you cloned from:
-
+ - origin is the default name Git gives to the server you cloned from:
 5. Go to GitHub and you should see the [Hello_World.py](Hello_World.py) file in the repository.
 
 
@@ -196,7 +195,7 @@ git push
 
 -----------
 
-## Branching
+## Branching and merging
 
 Allows you to diverge from the main branch. The main branch reminds unhatched while you experiment in the branch.  If you are happy with the new branch, you can later make it the main one.
 
@@ -242,7 +241,8 @@ git checkout main
  * Now main branch contains the changes made on the new branch
 
 ---------------
-## Restoring previois versions
+
+## Restoring
 
 1- See all the commits:
 ```
@@ -343,7 +343,7 @@ git merge branch_1
 
 -----------
 
-## Pull changes
+## Pulling changes
 
 - Update your local files with the changes available in remote (GitHub) files.
     - Maybe your worked on the same project in 2 different computers (i.e. my desktop and cluster), or you collaborated with someone. This can result in the remote files being ahead of your local files .
@@ -445,19 +445,21 @@ My first commit
 
 Bash is a command language for Unix shell (which means that are the same for MacOs and Linux, and different from Windows which uses DOS). 
 
-The Bash commands that will appear in this tutorial are:
+The Bash commands that appear in this tutorial are:
 
 - ```cd```: change directory 
 - ```mv```: move
 - ```cp```: copy
 - ```nano```: Command line text editor (there are others such as vim, emacs)
 
+------------
 
 ## Other things
 
 - Host your websites
 - Share posters (i.e. a QR code on your poster that redirects to the PDF hosted on github )
 
+------------
 
 ## Resources
 - http://book.git-scm.com/book/en/v2
