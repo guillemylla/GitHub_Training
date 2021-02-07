@@ -35,11 +35,11 @@ Git is a version-control tool that tracks changes made to the files and director
 
 ### When do I want to use git?
 
-The day that you write more than 1 line of code.  (That's my opinion)
+Whenever you need to write more than 1 line of code (IMO).  
 
 ### Why do I want to use git?
 
-- To reproduce your analysis.
+- To help making your analysis/scripts reproducible.
 - To go back to previous versions of your scripts.
 - To share your code.
 - To collaborate.
