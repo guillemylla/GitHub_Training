@@ -304,7 +304,7 @@ git push origin branch_2
  git diff branch_1..branch_2
  git merge branch_2
  ```
- *We get a merging conflict error
+ * We get a merging conflict error
  ```
 Auto-merging Hello_world.py
 CONFLICT (content): Merge conflict in Hello_world.py
@@ -354,7 +354,7 @@ git merge branch_1
 ```
 git clone https://github.com/guillemylla/GitHub_Training.git
 ```
-    * This Downloads all the files
+ * This Downloads all the files
 2- Now I edit the files and commit the changes in **Machine_2** and push them to main branch.
 ```
 git add -u Hello_world.py
@@ -386,7 +386,7 @@ git add -u Hello_world.py
 git commitn -m "changes from machine_2"
 git push
 ```
-    * Git is preventing you to erase the pushed changes. You can't pull either, git tries to protect your local changes.
+ * Git is preventing you to erase the pushed changes. You can't pull either, git tries to protect your local changes.
 3- Git fetch will download the info from GitHub without performing any changes to your local files
 ```
 git fetch
@@ -406,38 +406,18 @@ git commit -m "resolve merge machine1 and machine2"
 
 ## Basic Git commands
 
+- ```git clone```: clones a remote repository to your local machine.
+-```git init```: initialize repository.
+- ```git commit```:
+- ```gt push```
+- ```git stash```
+- ```git fetch```
+- ```git merge```
+- ```git pull```
+- ```git show```
+- ```git status```
 
-- git commit
-- gt push
-- git stash
-- git fetch
-- git merge
-- git pull
-- git show
-- git status
-
-
-Other useful commands
-- Cache credentials - to avoid typing pwd at every push
-
-
-
-Hands-on example
-
-
-Create new repo
-
-My first commit
-
-
-- Can I create a cloud session? connected to a public repo on my account?
-
-```
-    git add FILE
-    git commit -m "my first commit"
-    git push origin main
-     # main used to be called "master". Github recently removed unnecessary references to slavery
-``` 
+- Git commands [CheatSheet](https://education.github.com/git-cheat-sheet-education.pdf).
 
 ------------
 
