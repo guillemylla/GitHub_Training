@@ -232,7 +232,7 @@ git checkout main
  * Now main branch contains the changes made on the new branch
 
 ---------------
-## Resoting previois versions
+## Restoring previois versions
 
 1- See all the commits:
 ```
@@ -255,7 +255,7 @@ git checkout  back_to_the_future
 git push origin back_to_the_future
 ```
 
-5- IF I only want to restore a single (Hello_world.py ):
+5- If you only want to restore a single file (i.e. Hello_world.py ):
 
 ```
 git checkout <commit ID> Hello_world.py 
@@ -323,10 +323,11 @@ git push origin git push
 
 ```
 
-7- Notice that the main branch still hasn't changed, lets update it with content from branch_1
+7- Go to main branch and notice that it hasn't changed, lets update it with content from branch_1,
 
 ```
 git checkout main
+git merge branch_1
 ```
 
 
@@ -334,22 +335,64 @@ git checkout main
 
 ## Pull changes
 
-I'm going to work on the same project in 2 different computers (i.e. my desktop and cluster). If I make changes in the files in one device, I want to make sure tp get this change sin theother device before editing the same files. 
+- Update your local files with the changes available in remote (GitHub) files.
+    - Maybe your worked on the same project in 2 different computers (i.e. my desktop and cluster), or you collaborated with someone. This can result in the remote files being ahead of your local files .
 
-1- I clone the project in a new device (in this example I clone it in another directory).
+
+
+1- I clone the project in a new device (in this example I clone it in another directory) that I call **Machine_2**.
 ```
 git clone https://github.com/guillemylla/GitHub_Training.git
 ```
-* This Dowloads all the files
+    * This Downloads all the files
+2- Now I edit the files and commit the changes in **Machine_2** and push them to main branch.
+```
+git add -u Hello_world.py
+git commit -m "add date"
+git push origin main
+```
+3- I go back to work in the main branch of **Machine_1**, but changes made on **Machine_2** are not there. I have to pull the changes from GitHub.
+```
+git config --global pull.ff only  ## configigure pull behavior
+git pull
+```
+* This will update my local version of the main branch.
+
+
+### Common conflict
+
+- When the same file in the same branch has been edited independently by different users/machines. (Not recommended, better to create different branches for each machine/user).
+
+
+1- Edit, commit, and push main branch from **Machine_1**.
+```
+git add -u Hello_world.py 
+git commitn -m "changes from machine_1"
+git push
+```
+2- Edit, commit and push form **Machine_2** will get you an error. Because the remote main branch is ahead of you. 
+```
+git add -u Hello_world.py 
+git commitn -m "changes from machine_2"
+git push
+```
+    * Git is preventing you to erase the pushed changes. You can't pull either, git tries to protect your local changes.
+3- Git fetch will download the info from GitHub without performing any changes to your local files
+```
+git fetch
+git merge origin main
+```
+4- We now can see and solve the merging conflicts as before
+5- Commit and push changes
+```
+git add -u Hello_world.py 
+git commit -m "resolve merge machine1 and machine2"
+```
 
 
 
+-----------
 
-- **git fetch** retrieves the latest meta-data info from the original ( doesn’t do any file transferring. It’s more like just checking to see if there are any changes available). 
-
-- **git pull** on the other hand does that AND bringsthose changes from the remote repository.
-
-- Pulls down all the data from that remote project that you don’t have yet. After you do this, you should have references to all the branches from thatremote, which you can merge in or inspect at any time.
 
 ## Basic Git commands
 
