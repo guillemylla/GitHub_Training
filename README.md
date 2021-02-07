@@ -408,18 +408,18 @@ git commit -m "resolve merge machine1 and machine2"
 
 - ```git clone```: Clones a remote repository to your local machine.
 - ```git init```: Initialize repository.
-- ```git status```: Shows modifiedcand staged files.
+- ```git status```: Shows modified and staged files.
 - ```git add```: Select files that will be committed.
 - ```git commit```: Creates a "snapshot" of your files.
 - ```git push```: Send committed files to remote server (i.e. GitHub).
 - ```git branch```: Create new branch.
-- ```git checkout``: to change working branch.
+- ```git checkout```: Changes working branch.
 - ```git merge```: Merges content of different branches.
 - ```git pull```: Downloads from remote and merges with local
 - ```git fetch```: Downloads info from remote, but does not merge with local.
 - ```git show```: Shows the contents of a single commit.
-- ```git stash```: Save modified and staged changes
-- Git commands [CheatSheet](https://education.github.com/git-cheat-sheet-education.pdf).
+
+More details in the Git commands [CheatSheet](https://education.github.com/git-cheat-sheet-education.pdf).
 
 ------------
 
