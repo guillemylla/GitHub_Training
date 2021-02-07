@@ -130,7 +130,9 @@ After cloning the new repository now you can start your project.
 ```
 git add Hello_World.py
 ```
+
     * If you want to track **all files in the directory* at once you can do:
+    
 ```
 git add .
 ```
@@ -143,6 +145,7 @@ git commit -m "my first commit"
 ```
 git push origin main
 ```
+
     * origin is the default name Git gives to the server you cloned from:
 
 5. Go to GitHub and you should see the [Hello_World.py](Hello_World.py) file in the repository.
