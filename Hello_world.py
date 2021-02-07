@@ -13,6 +13,6 @@ def sayHI(name):
         print("Hi, %s, have a nice %s" % (name, today))
 
 
-sayHI("Bob")
-sayHI("Alice")
+sayHI("Charles")
+sayHI("David")
 
