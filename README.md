@@ -1,19 +1,24 @@
 # GitHub Training
 
-GitHub training for the Extavour lab
+------------
+
+- GitHub training for the Extavour lab
+- Guillem Ylla
+- February 2021
+
 ------------
 
 ## Table of contents
 
-1. [Introduction](##Introduction)
-2. [Create a GitHub account](##Create-a-GitHub-account)
-3. [First time using git](##First-time-using-git)
-4. [Create a repository from GitHub](##Create-a-repository-from-GitHub)
-5. [Add files to the repository](##Add-files-to-the-repository)
-6. [Edit files](##Edit-files)
-7. [Commit changes](##Commit-changes)
-8. [Make a Branch](##Make-a-Branch)
-9. [Basic bash commands](##Basic-bash-commands)
+- [Introduction](#Introduction)
+- [Create a GitHub account](#Create-a-GitHub-account)
+- [First time using git](#First-time-using-git)
+- [Create a repository from GitHub](#Create-a-repository-from-GitHub)
+- [Add files to the repository](#Add-files-to-the-repository)
+- [Edit files](#Edit-files)
+- [Commit changes](#Commit-changes)
+- [Make a Branch](#Make-a-Branch)
+- [Basic bash commands](#Basic-bash-commands)
 
 
 
@@ -63,16 +68,18 @@ This system allows the user to go back to any previous version of the project. I
 	- *"If you're an educator or a researcher, you can apply to receive GitHub Team for your organization account for free."* 
 	- To "upgrade"  to Educator account follow this instructions : https://docs.github.com/en/education/teach-and-learn-with-github-education/apply-for-an-educator-or-researcher-discount
 
+-----------
+
 ## First time using git
 
- - The first time you use git in a computer, you need to configure it
+ 1. The first time you use git in a computer, you need to configure it
  
  ```
  $ git config --global user.name "your_username"
  $ git config --global user.email youremail@example.com
  ```
 
-- Optional: if you want git to remember the password during a period of time.
+2. Optional: if you want git to remember the password during a period of time.
 
 
 ```
