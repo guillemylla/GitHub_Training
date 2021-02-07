@@ -282,7 +282,7 @@ git checkout <commit ID> Hello_world.py
 ```
 git branch branch_1
 git branch branch_2
-git branch # to see allbranches
+git branch
 ```
 2 - Go to branch_1 and edit 1st line
 ```
