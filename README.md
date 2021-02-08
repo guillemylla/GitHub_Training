@@ -70,6 +70,8 @@ This system allows the user to go back to any previous version of the project. I
 3. Get a "GitHub  Education" account (optional): 
 	- *"If you're an educator or a researcher, you can apply to receive GitHub Team for your organization account for free."* 
 	- To "upgrade"  to Educator account follow this instructions : https://docs.github.com/en/education/teach-and-learn-with-github-education/apply-for-an-educator-or-researcher-discount
+4. Install Git on your machine.
+	* In case of doubts, check [this](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) with isntructions to install Git in any operative system.
 
 -----------
 
