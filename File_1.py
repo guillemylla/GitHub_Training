@@ -13,5 +13,5 @@ def sayHi(name):
 	print("Hi, %s, have a nice %s"%(name, today))
 
 today = date.today()
-sayHi("Charles")
-sayHi("David")
+sayHi("Eli")
+sayHi("Frank")
