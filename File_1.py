@@ -10,7 +10,7 @@ print("Good morning Alice")
 
 def sayHi(name):
 	"this function says hi to people"
-	print("Hi, %s, have a nice %s"%(name, today))
+	print("Good morning, %s, have a nice %s"%(name, today))
 
 today = date.today()
 sayHi("Guillem")
