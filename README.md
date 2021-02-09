@@ -192,7 +192,6 @@ git push
 ```
 3- You can see the changes and compare versions in GitHub
 
-![](images/GIthub_diff.png)
 
 
 -----------
