@@ -15,3 +15,5 @@ def sayHi(name):
 today = date.today()
 sayHi("Guillem")
 sayHi("Harsha")
+sayHi("Eli")
+sayHi("Frank")
