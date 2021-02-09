@@ -356,6 +356,7 @@ git merge branch_1
 git clone https://github.com/guillemylla/GitHub_Training.git
 ```
  * This Downloads all the files
+
 2- Now I edit the files and commit the changes in **Machine_2** and push them to main branch.
 ```
 git add -u Hello_world.py
