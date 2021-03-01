@@ -213,6 +213,7 @@ git checkout new_branch
 ```
 
 3- Edit a file (i.e. Hello_World.py))
+
 4- Stage and commit the changes to the new branch
 
 ```
